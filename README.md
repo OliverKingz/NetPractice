@@ -31,8 +31,14 @@ Made by: [![Contributors Display](https://badges.pufler.dev/contributors/OliverK
 
 - [Overview](#overview)
 - [Features](#features)
+- [Networking Basics (IPv4)](#networking-basics-ipv4)
+  - [Network Masks](#network-masks)
+  - [Special IP Ranges](#special-ip-ranges)
+  - [Network Devices & Routing](#network-devices--routing)
+  - [How Networks Work Together](#how-networks-work-together)
+- [NetPractice Tips](#netpractice-tips)
 - [What I Learned](#what-i-learned)
-- [Submission](#submission)
+- [Solutions](#solutions)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -136,11 +142,12 @@ Certain IP address ranges are reserved for specific purposes:
 
 ### Network Devices & Routing
 
-- **Switches:** Connect multiple devices within the same network, distributing data packets to their intended recipients.
-- **Routers:** Essential for communication between different networks. A router has multiple interfaces, each connecting to a different network.
-- **Routing Table:** Each router maintains a routing table that tells it the paths to various networks. It consists of:
-  - **Destination:** The target network address (e.g., 190.3.2.252/30) or 0.0.0.0/0 (for a default route to any unknown network).
-  - **Next Hop:** The IP address of the next router in the path to the destination network.
+- **Switches:** Simple devices that connect multiple devices within the **same network**. They don't route traffic between different networks.
+- **Routers:** Essential for connecting **different networks**. Each router interface connects to a distinct subnet.
+- **Routing Tables:** Every device (hosts and routers) needs a routing table to know where to send traffic.
+  - **Destination (`0.0.0.0/0` or `default`):** Use this for a "default route" when a device needs to send traffic to _any_ network it doesn't have a more specific route for. This typically points to its directly connected router.
+  - **Specific Destination:** For routers, you'll need specific routes to networks they are not directly connected to, pointing to the "next hop" router that can reach that destination.
+  - **Next Hop:** The IP address of the _directly connected_ router interface that traffic should be sent to.
 
 ### How Networks Work Together
 
@@ -151,6 +158,33 @@ To send data between IP addresses:
 - **Different Networks:** If devices are in different networks, they must be connected via one or more routers. Routers use their routing tables to forward packets from one network to another until they reach the destination network.
 
 Understanding these fundamentals of IP addresses, masks, and routing is crucial for designing and troubleshooting networks.
+
+---
+
+## NetPractice Tips
+
+These tips are based on common challenges and solutions encountered across NetPractice levels, especially when working with IPv4.
+
+### General Strategy
+
+- **Fixed Parameters First:** Always start by identifying any fixed IP addresses or masks in the problem. These often dictate the network ranges you'll need to work within.
+- **Subnet Definition:** Clearly define your subnets. Ensure each link (Host-Router, Router-Router) has its own unique network.
+- **IP & Mask Harmony:** Devices within the same subnet **must** have IP addresses and masks that result in the same network address (e.g., `192.168.1.10` with `255.255.255.0` gives network `192.168.1.0`).
+- **Usable IPs:** Remember that the first (network address) and last (broadcast address) IPs in any subnet are **not usable** for devices.
+- **Loopback Prevention:** Pay attention to "loop detected" errors. This often means a device (especially a host or router) is sending traffic back to itself or sending traffic to a connected device that isn't the correct gateway for that destination.
+
+### Handling the "Internet" and IP Types
+
+- **Private vs. Public IPs:** This is critical!
+  - **Private IP Ranges:** `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`. These are for internal networks and are **NOT routable on the global internet**.
+  - **"private subnets not routed over internet":** If you see this error when communicating with the `Internet I` device, it means your host (or its network) is using a private IP, and the "Internet" router refuses to send return traffic to it.
+- **No NAT? Use Public IPs:** If Network Address Translation (NAT) isn't an option (or explicitly disallowed), any device that needs to communicate with the `Internet I` **must** be configured with IP addresses from a **publicly routable range**. In NetPractice, this might mean using ranges like `9.x.x.x` or other non-private ranges as instructed by the level.
+- **Internet Router Routes:** The `Internet I` device often needs specific routes back to your public-facing networks (e.g., `203.0.112.0/21` pointing to your router's public interface) if those networks are not directly attached or if it's not simply a default route scenario.
+
+### Advanced Routing Concepts
+
+- **Route Summarization (CIDR):** To save routing table entries (especially on routers with strict limits), use larger subnet masks (smaller CIDR numbers like `/21` or `/18`) to group multiple smaller subnets into one route. For example, `203.0.112.0/21` can cover `203.0.113.0/24` and `203.0.114.0/24`.
+- **`/30` Subnets:** These are very common for point-to-point links (like between two routers) as they provide exactly two usable IP addresses, minimizing IP waste.
 
 ---
 
