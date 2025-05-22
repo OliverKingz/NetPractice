@@ -202,80 +202,75 @@ These tips are based on common challenges and solutions encountered across NetPr
 The solutions for each level are provided below. Each solution is a screenshot of the completed network configuration for that level.
 The solutions are organized by level, with each level's solution displayed in a collapsible section for easy navigation.
 
-<details>
-  <summary><strong>Show Solutions</strong></summary>
+ <details>
+   <summary><strong>Level 1</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_01.png" alt="Level 1 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 1</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_01.png" alt="Level 1 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 2</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_02.png" alt="Level 2 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 2</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_02.png" alt="Level 2 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 3</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_03.png" alt="Level 3 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 3</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_03.png" alt="Level 3 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 4</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_04.png" alt="Level 4 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 4</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_04.png" alt="Level 4 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 5</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_05.png" alt="Level 5 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 5</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_05.png" alt="Level 5 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 6</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_06.png" alt="Level 6 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 6</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_06.png" alt="Level 6 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 7</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_07.png" alt="Level 7 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 7</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_07.png" alt="Level 7 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 8</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_08.png" alt="Level 8 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 8</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_08.png" alt="Level 8 Solution" width="600"/>
-    </p>
-  </details>
+ <details>
+   <summary><strong>Level 9</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_09.png" alt="Level 9 Solution" width="600"/>
+   </p>
+ </details>
 
-  <details>
-    <summary><strong>Level 9</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_09.png" alt="Level 9 Solution" width="600"/>
-    </p>
-  </details>
-
-  <details>
-    <summary><strong>Level 10</strong></summary>
-    <p align="center">
-      <img src="solutions/NetPractice_10.png" alt="Level 10 Solution" width="600"/>
-    </p>
-  </details>
-
-</details>
+ <details>
+   <summary><strong>Level 10</strong></summary>
+   <p align="center">
+     <img src="solutions/NetPractice_10.png" alt="Level 10 Solution" width="600"/>
+   </p>
+ </details>
 
 ---
 
