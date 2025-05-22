@@ -2,10 +2,16 @@
 
 <div align="right">
 
-[![GitHub stars](https://img.shields.io/github/stars/OliverKingz/NetPractice?color=brightgreen)]()  
- [![Visits Badge](https://badges.pufler.dev/visits/OliverKingz/NetPractice)]()  
- [![Created Badge](https://badges.pufler.dev/created/OliverKingz/NetPractice)]()  
- [![Updated Badge](https://badges.pufler.dev/updated/OliverKingz/NetPractice)]()
+[![GitHub stars](https://img.shields.io/github/stars/OliverKingz/NetPractice?color=brightgreen)]()
+[![Visits Badge](https://badges.pufler.dev/visits/OliverKingz/NetPractice)]()
+[![Created Badge](https://badges.pufler.dev/created/OliverKingz/NetPractice)]()
+[![Updated Badge](https://badges.pufler.dev/updated/OliverKingz/NetPractice)]()
+
+</div>
+
+<div align="center">
+  
+![NetPractice Front Page](solutions/NetPractice_title.png)
 
 </div>
 
